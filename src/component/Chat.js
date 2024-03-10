@@ -2,11 +2,11 @@ import React, { Component } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const customStyle={
-    textAlign: "center",
-    marginTop: "20px",
     color:"aqua",
-    border:"1px solid black",
-    textTransform: "captalize"
+    fontSize:"2rem",
+    fontWeight:"100px",
+    marginTop:"20px"
+
 }
 export class Chat extends Component {
     componentDidMount() {
@@ -24,8 +24,8 @@ export class Chat extends Component {
 
     render() {
         return (
-            <div>
-                <button type="button" class="btn btn-outline-info btn-lg">STUDENT ASSISTANT</button>
+            <div className="parent-container">
+                <div><h1 style={customStyle}>STUDENT ASSISTANT</h1></div>
             </div>
         );
     }
