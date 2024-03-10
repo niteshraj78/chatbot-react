@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 const customStyle={
     textAlign: "center",
     marginTop: "20px",
@@ -23,7 +25,7 @@ export class Chat extends Component {
     render() {
         return (
             <div>
-                <h1 style={customStyle}>This is our chatbot</h1>
+                <button type="button" class="btn btn-outline-info btn-lg">STUDENT ASSISTANT</button>
             </div>
         );
     }
